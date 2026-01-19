@@ -1,1 +1,1 @@
-# Distillation-Graph-Stability
+# IJCAI#138
