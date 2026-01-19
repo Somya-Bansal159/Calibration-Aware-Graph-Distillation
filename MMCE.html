@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MMCE</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #222;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .container {
+        /* margin-left: -100px; */
+        padding: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .description {
+        max-width: 900px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #444;
+    }
+
+    .section-title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .iframe-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .iframe-box {
+        background: #fafafa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .iframe-title {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    .iframe-wrapper {
+        width: 40vw;      /* EXACTLY same as Plotly width */
+        height: 28vw;      /* EXACTLY same as Plotly height */
+        overflow: hidden;
+        margin: 0 auto;     /* center it */
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+        position: relative;
+    }
+
+
+
+    /* Fixed thin image on the left */
+    .side-image {
+        position: fixed;
+        left: 10px;
+        bottom: 40px;
+        width: 80px;       /* very thin horizontally */
+        height: auto;
+        z-index: 999;
+        opacity: 0.9;
+    }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 13px;
+        color: #666;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Fixed side image -->
+<img src="colorbar.jpg" class="side-image" alt="Side Image">
+
+<div class="container">
+
+    <h1>MMCE</h1>
+
+    <div class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor inventore ad veritatis molestias dicta, cumque nostrum, quidem quia nemo, omnis rem atque. Ut, fugit dolorem deleniti voluptas sint id eum.
+    </div>
+
+
+    <!-- FIRST 2x2 BLOCK -->
+    <div class="section-title">Accuracy Ratio</div>
+
+    <div class="iframe-grid">
+
+        <div class="iframe-box">
+            <div class="iframe-title">Cora</div>
+            <div class="iframe-wrapper" id="plot">
+                <iframe src="mmce_accuracy_cora.html"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Pubmed</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_accuracy_pubmed.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Fraud</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_accuracy_fraud.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Actor</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_accuracy_actor.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- SECOND 2x2 BLOCK -->
+    <div class="section-title">ECE Ratio</div>
+
+    <div class="iframe-grid">
+
+        <div class="iframe-box">
+            <div class="iframe-title">Cora</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_ece_cora.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Pubmed</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_ece_pubmed.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Fraud</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_ece_fraud.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <div class="iframe-title">Actor</div>
+            <div class="iframe-wrapper">
+                <iframe src="mmce_ece_actor.html" scrolling="no"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <footer>
+        Generated Interactive Report
+    </footer> -->
+
+</div>
+
+</body>
+</html>
