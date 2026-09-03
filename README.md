@@ -118,6 +118,12 @@ Teacher GNN
 
 ## Results
 
+---
+
+The interactive plots can be viewed [here](https://somya-bansal159.github.io/Calibration-Aware-Graph-Distillation).
+
+---
+
 ### Impact of Distillation on Student
 
 We compare the relative Accuracy and ECE across all the datasets and distillation methods, for an uncalibrated teacher, to check the impact of distillation weight.
