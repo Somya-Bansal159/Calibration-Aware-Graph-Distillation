@@ -122,7 +122,7 @@ Teacher GNN
 
 We compare the relative Accuracy and ECE across all the datasets and distillation methods, for an uncalibrated teacher, to check the impact of distillation weight.
 
-![Distillation Weight Analysis](/assets/LAMDA.pdf)
+![Impact of Distillation on Student](assets/LAMDA.png)
 
 ---
 
@@ -130,31 +130,31 @@ We compare the relative Accuracy and ECE across all the datasets and distillatio
 
 ### Impact of TS on Student
 
-![Impact of TS on Student](/assets/TS.pdf)
+![Impact of TS on Student](assets/TS.png)
 
 ---
 
 ### Impact of MMCE on Student
 
-![Impact of MMCE on Student](/assets/MMCE.pdf)
+![Impact of MMCE on Student](assets/MMCE.png)
 
 ---
 
 ### Impact of MDCA on Student
 
-![Impact of MDCA on Student](/assets/MDCA.pdf)
+![Impact of MDCA on Student](assets/MDCA.png)
 
 ---
 
 ### Impact of CaGCN on Student
 
-![Impact of CaGCN on Student](/assets/CAGCN.pdf)
+![Impact of CaGCN on Student](assets/CAGCN.png)
 
 ---
 
 ### Impact of GATS on Student
 
-![Impact of GATS on Student](/assets/GATS.pdf)
+![Impact of GATS on Student](assets/GATS.png)
 
 ---
 
